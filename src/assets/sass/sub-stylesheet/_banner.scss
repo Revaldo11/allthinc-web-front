@@ -14,14 +14,14 @@
                 width: 100%;
                 height: 455px;
                 
-                @include breakpoint(max-sm){
-                    height: 300px;
-                }
                 @include breakpoint(max-md){
                     height: 400px;
                 }
-                @include breakpoint(max-mobile){
+                @include breakpoint(max-sm){
                     height: 300px;
+                }
+                @include breakpoint(max-mobile){
+                    height: 250px;
                 }
             }
 
@@ -34,21 +34,21 @@
                 top: 0;
                 left: 0;
 
-                @include breakpoint(max-sm){
-                    height: 300px;
-                }
                 @include breakpoint(max-md){
                     height: 400px;
                 }
-                @include breakpoint(max-mobile){
+                @include breakpoint(max-sm){
                     height: 300px;
+                }
+                @include breakpoint(max-mobile){
+                    height: 250px;
                 }
             }
 
             
            .content {
+               position: absolute;
                 margin-right: 50%;
-                position: absolute;
                 top: 20%;
                 left: 5%;
                 text-align: left;
@@ -58,11 +58,11 @@
                     left: 5%;
                 }
                 @include breakpoint(max-sm){
-                    top: 10%;
+                    top: 20%;
                     left: 5%;
                 }
                 @include breakpoint(max-mobile){
-                    top: 15%;
+                    top: 10%;
                     left: 5%;
                 }
 
@@ -83,7 +83,7 @@
                         font-size: 20px;
                     }
                     @include breakpoint(max-mobile){
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                 }
                 p {
@@ -107,7 +107,7 @@
                     @include breakpoint(max-mobile){
                         font-size: 10px;
                         line-height: 15px;
-                        margin-bottom: 30px;
+                        margin-bottom: 25px;
                     }
 
                 }
@@ -139,7 +139,7 @@
                         }
                         @include breakpoint(max-mobile){
                             font-size: 10px;
-                            padding: 10px;
+                            padding: 5px;
                             border-radius: 10px;
                         }
                     }
