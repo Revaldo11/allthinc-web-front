@@ -14,10 +14,14 @@ const Banner = () => {
         <div className="container">
             <div className="banner-content">
                 <div className="gradient"></div>
-                <img className="banner" src={logo} alt="banner" />
-                <div className="text-overlay">
+                <img className="banner-image" src={logo} alt="banner" />
+                {/* Column content */}
+                <div className="content">
                     {title}
-                    <p>{desc}</p>
+                    <p className="text-white font-extralight not-italic">{desc}</p>
+                    <div className="banner-btn bg-neutral hover:bg-neutral-light hover:transition-all transition ease-in-out rounded-md">
+                        <a href="#" className="start-now text-white">Mulai Sekarang</a>
+                    </div> 
                 </div>
             </div>
         </div>
