@@ -1,0 +1,146 @@
+/* @@@@@@@@@@@@@  Banner Section Start Here  @@@@@@@@@@@@@@ */
+.banner-section {
+    .container {
+        @extend %p-0;
+    }
+    &.style-4{
+        padding: 130px 0 !important;
+        background-image: none !important;
+        .banner-content {
+            position: relative;
+            max-width: 100% !important;
+            .gradient{
+               width: 100% !important;
+               height: 455px;
+               background-image: linear-gradient(90deg, #24130a99 0%, #2c150a33 100%, #37312e1a 100%);
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .banner {
+                width: 100% !important;
+                height: 455px;
+            }
+           .text-overlay{
+                margin-right: 50%;
+                position: absolute;
+                top: 30%;
+                left: 5%;
+                text-align: left;
+                h2 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    font-style: italic;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #fff;
+                    span {
+                        color: #C18553;
+                    }
+                }
+                @extend %mb-10;
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    color: #fff;
+                    font-style: normal;
+                }
+           }
+        }
+    
+    }
+}
+
+
+
+/* @@@@@@@@@@@@@  Page Header Section Start Here  @@@@@@@@@@@@@@ */
+.pageheader-section {
+    padding: 250px 0 100px;
+    background-image: url(../images/pageheader/bg/01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .pageheader-content {
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+    &.style-2 {
+        @extend %p-0;
+        padding-top: 250px;
+        background-image: url(../images/pageheader/bg/02.jpg);
+        @include breakpoint(max-lg) {
+            padding-bottom: 60px;
+            padding-top: 150px;
+        }
+        .pageheader-thumb {
+            @extend %rel;
+            margin-bottom: 30px;
+            border: 10px solid $white-color;
+            @include border-radius(6px);
+            @include breakpoint(lg) {
+                margin-bottom: -60px;
+            }
+            .video-button {
+                @extend %abs;
+                @extend %position-center;
+            }
+        }
+        .pageheader-content {
+            .course-category {
+                @extend %mb-10;
+                .course-cate {
+                    padding: 3px 15px;
+                    padding-left: 25px;
+                    @extend %bg-primary;
+                    @extend %white-color;
+                    @include border-radius(4px);
+                    font-weight: 500;
+                    @extend %rel;
+                    margin-right: 10px;
+                    &::before {
+                        @extend %abs;
+                        width: 6px;
+                        height: 6px;
+                        @include border-radius(100%);
+                        background: rgba($white-color, $alpha: .50);
+                        top: 50%;
+                        left: 10px;
+                        @include transform(translateY(-50%));
+                    }
+                }
+                .course-offer {
+                    padding: 3px 15px;
+                    @extend %bg-theme;
+                    @extend %white-color;
+                    @include border-radius(4px);
+                }
+            }
+            .phs-thumb {
+                @extend %mt-10;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    @include border-radius(100%);
+                    @extend %mr-10;
+                }
+                span {
+                    font-size: $fs-h6;
+                    font-weight: 500;
+                    @extend %d-inline-block;
+                    @extend %mr-15;
+                }
+                .course-reiew {
+                    @extend %d-inline-block;
+                    .ratting {
+                        @extend %theme-color;
+                        @extend %mr-5;
+                    }
+                }
+            }
+        }
+    }
+}
