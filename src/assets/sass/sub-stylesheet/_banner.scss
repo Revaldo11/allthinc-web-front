@@ -9,6 +9,22 @@
         .banner-content {
             position: relative;
             max-width: 100% !important;
+
+            .banner-image {
+                width: 100%;
+                height: 455px;
+                
+                @include breakpoint(max-sm){
+                    height: 300px;
+                }
+                @include breakpoint(max-md){
+                    height: 400px;
+                }
+                @include breakpoint(max-mobile){
+                    height: 300px;
+                }
+            }
+
             .gradient{
                width: 100% !important;
                height: 455px;
@@ -17,36 +33,116 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+
+                @include breakpoint(max-sm){
+                    height: 300px;
+                }
+                @include breakpoint(max-md){
+                    height: 400px;
+                }
+                @include breakpoint(max-mobile){
+                    height: 300px;
+                }
             }
 
-            .banner {
-                width: 100% !important;
-                height: 455px;
-            }
-           .text-overlay{
+            
+           .content {
                 margin-right: 50%;
                 position: absolute;
-                top: 30%;
+                top: 20%;
                 left: 5%;
                 text-align: left;
+
+                @include breakpoint(max-md){
+                    top: 10%;
+                    left: 5%;
+                }
+                @include breakpoint(max-sm){
+                    top: 10%;
+                    left: 5%;
+                }
+                @include breakpoint(max-mobile){
+                    top: 15%;
+                    left: 5%;
+                }
+
                 h2 {
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 1.2;
                     font-style: italic;
-                    font-family: Arial, Helvetica, sans-serif;
                     color: #fff;
                     span {
                         color: #C18553;
                     }
+
+                    @include breakpoint(max-md){
+                        font-size: 30px;
+                    }
+                    @include breakpoint(max-sm){
+                        font-size: 20px;
+                    }
+                    @include breakpoint(max-mobile){
+                        font-size: 20px;
+                    }
                 }
-                @extend %mb-10;
                 p {
                     font-size: 20px;
-                    font-weight: 400;
-                    line-height: 160%;
-                    color: #fff;
-                    font-style: normal;
+                    line-height: 35px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    margin-bottom: 65px;
+
+                    @include breakpoint(max-md){
+                        font-size: 15px;
+                        line-height: 20px;
+                        margin-bottom: 50px;
+                    }
+
+                    @include breakpoint(max-sm){
+                        font-size: 10px;
+                        line-height: 15px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    @include breakpoint(max-mobile){
+                        font-size: 10px;
+                        line-height: 15px;
+                        margin-bottom: 30px;
+                    }
+
+                }
+                .banner-btn {
+                    width: 185px;
+                    text-align: center;
+
+                    @include breakpoint(max-md){
+                        width: 150px;
+                    }
+                    @include breakpoint(max-sm){
+                        width: 100px;
+                    }
+                    @include breakpoint(max-mobile){
+                        width: 100px;
+                    }
+
+                    a {
+                        padding: 15px 30px;
+                        @include breakpoint(max-md){
+                            font-size: 15px;
+                            padding: 10px 10px;
+                            border-radius: 10px;
+                        }
+                        @include breakpoint(max-sm){
+                            font-size: 10px;
+                            padding: 10px 10px;
+                            border-radius: 10px;
+                        }
+                        @include breakpoint(max-mobile){
+                            font-size: 10px;
+                            padding: 10px;
+                            border-radius: 10px;
+                        }
+                    }
                 }
            }
         }
