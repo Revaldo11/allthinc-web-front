@@ -1,0 +1,36 @@
+.creator-populer {
+    // margin-left: 300px;
+    // margin-right: 300px;
+    .creator-populer__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .creator-populer__swiper {
+    }
+
+    .wrapper{
+        margin-left: 300px;
+        max-height: 120px;
+        display: flex;
+        border: 1px solid #E5E5E5;
+        overflow-x: auto;
+        
+    }
+
+    .wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .wrapper .items{
+        min-width: 110px;
+        height: 110px;
+        line-height: 110px;
+        text-align: center;
+        background-color: red;
+        margin: 5px;
+        border-radius: 20%;
+        transition: all 0.3s ease;
+    }
+}

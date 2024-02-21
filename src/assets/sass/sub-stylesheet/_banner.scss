@@ -1,10 +1,10 @@
 /* @@@@@@@@@@@@@  Banner Section Start Here  @@@@@@@@@@@@@@ */
 .banner-section {
-    .container {
+   .container {
         @extend %p-0;
     }
     &.style-4{
-        padding: 130px 0 !important;
+        padding: 120px 0px 0px !important;
         background-image: none !important;
         .banner-content {
             position: relative;
@@ -67,7 +67,7 @@
                 }
 
                 h2 {
-                    font-size: 40px;
+                    font-size: 35px;
                     font-weight: 700;
                     line-height: 1.2;
                     font-style: italic;
@@ -77,7 +77,7 @@
                     }
 
                     @include breakpoint(max-md){
-                        font-size: 30px;
+                        font-size: 25px;
                     }
                     @include breakpoint(max-sm){
                         font-size: 20px;
