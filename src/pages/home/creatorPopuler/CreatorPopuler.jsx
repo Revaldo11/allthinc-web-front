@@ -3,20 +3,21 @@ import CreatorCard from '../creatorPopuler/components/CreatorCard';
 import {Swiper, SwiperSlide} from 'swiper/react';
 
 import sampleImage from '../../../assets/images/sample.png';
+import sampleProfile from '../../../assets/images/sample-profile.png';
 
 const CreatorPopuler = () => {
 
     const creators = [
-        { imageUrl: sampleImage, creatorName: "Nama Creator 1" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 2" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 3" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 4" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 5" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 6" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 7" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 8" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 9" },
-        { imageUrl: sampleImage, creatorName: "Nama Creator 10" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 1" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 2" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 3" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 4" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 5" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 6" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 7" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 8" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 9" },
+        { imageUrl: sampleImage, imageProfile: sampleProfile, creatorName: "Nama Creator 10" },
     ];
 
     return (
@@ -36,7 +37,7 @@ const CreatorPopuler = () => {
             >
                 {creators.map((creator, index) => (
                     <SwiperSlide key={index}>
-                        <CreatorCard imageUrl={creator.imageUrl} creatorName={creator.creatorName} />
+                        <CreatorCard imageUrl={creator.imageUrl} imageProfile={creator.imageProfile} creatorName={creator.creatorName} />
                     </SwiperSlide>
                 ))}
             </Swiper>
