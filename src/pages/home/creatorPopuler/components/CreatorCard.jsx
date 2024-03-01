@@ -1,6 +1,6 @@
 const CreatorCard = ({ imageUrl, imageProfile,  creatorName }) => {
     return (
-        <article className="card card--1">
+        <article className="card card__1">
             <img className="card__img" src={imageUrl} alt="" />
             <div className="card_img_2">
                 <img className="card__img_profile" src={imageProfile} alt="" />

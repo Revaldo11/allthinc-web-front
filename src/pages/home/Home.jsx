@@ -1,6 +1,6 @@
 import Banner from "./Banner"
 import CreatorPopuler from "./creatorPopuler/CreatorPopuler"
-import Footer from "./Footer"
+import Footer from "../../layouts/Footer"
 
 const Home = () => {
   return (

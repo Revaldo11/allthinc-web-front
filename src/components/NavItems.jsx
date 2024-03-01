@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import logo from '../assets/images/logo/logo.png'
-import iconSearch from '../assets/images/icon/i-search.png'
-import iconCart from '../assets/images/icon/i-shop.png'
-import iconProfile from '../assets/images/icon/i-profile.png'
+import logo from '../assets/images/logo/logo.svg'
+import iconSearch from '../assets/images/icon/i-search.svg'
+import iconCart from '../assets/images/icon/i-cart.svg'
+import iconProfile from '../assets/images/icon/i-profile.svg'
 
 const NavItems = () => {
     const [menuToggle, setMenuToggle] = useState(false);
-    const [socialToggel, setSocialToggle] = useState(false);
     const [headerFixed, setHeaderFixed] = useState(false);
 
     //add event listener
@@ -23,23 +22,8 @@ const NavItems = () => {
 
   return (
     <header className={`header-section style-4 ${headerFixed?"header-fixed fadeInUp":""}`}>
-        <div className={`header-top d-md-none ${socialToggel ? "open" : ""}`}>
-            <div className="container">
-                <div className="header-top-area">
-                    <Link to="/signup" className="lab-btn me-3">
-                        <span>Sign Up</span>
-                    </Link>
-                    <Link to="/login" className="">
-                        <span>Login</span>
-                    </Link>
-                </div>
-            </div>
-        </div>
-
-        <div className="header-bottom">
-            <div className="container">
+        <div className="container">
                 <div className="header-wrapper">
-
                     {/* menu-toggler */}
                         <div onClick={()=>setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active":""}`}>
                             <span></span>
@@ -57,11 +41,11 @@ const NavItems = () => {
                     <div className="menu-area">
                         <div className="menu">
                             <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/shop">Shop</Link></li>
-                                <li><Link to="/blog">Blog</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/">Beranda</Link></li>
+                                <li><Link to="/shop">Kreator</Link></li>
+                                <li><Link to="/blog">Favorite</Link></li>
+                                <li><Link to="/about">Profile</Link></li>
+                                <li><Link to="/contact">About</Link></li>
                             </ul>
                         </div>
 
@@ -78,7 +62,6 @@ const NavItems = () => {
                     </div>
                 </div>
             </div>
-        </div>
     </header>
   )
 }

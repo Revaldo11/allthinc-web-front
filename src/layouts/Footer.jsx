@@ -4,27 +4,26 @@ import { Col, Container, Row,  Card, CardBody, CardTitle} from 'reactstrap';
 
 
 // Import Images
-import logo from "./../../assets/images/logo/logo.svg";
-import iconFacebook from "./../../assets/images/icon/i-facebook.svg";
-import iconInstragram from "./../../assets/images/icon/i-insta.svg";
-import iconYoutube from "./../../assets/images/icon/i-youtube.svg";
-import iconTwitter from "./../../assets/images/icon/i-twitter.svg";
-import iconLinkedIn from "./../../assets/images/icon/i-linkedin.svg";
+import logo from "./../assets/images/logo/logo.svg";
+import iconFacebook from "./../assets/images/icon/i-facebook.svg";
+import iconInstragram from "./../assets/images/icon/i-insta.svg";
+import iconYoutube from "./../assets/images/icon/i-youtube.svg";
+import iconTwitter from "./../assets/images/icon/i-twitter.svg";
+import iconLinkedIn from "./../assets/images/icon/i-linkedin.svg";
 
 const Footer = () => {
     return (
         <React.Fragment>
-
             {/* footer konten */}
             <footer className="custom-footer py-5 position-relative">
                 <Container>
                     <Row>
                         <Col lg={4} className="mt-4">
-                            <div>
+                            <div className='center__item'>
                                 <div>
                                     <img src={logo} alt="logo light" height="17" />
                                 </div>
-                                <div className="mt-4">
+                                <div className="mt-4 product__desc">
                                     <p>
                                         Allthinc menawarkan produk fashion dengan konsep print on demand, 
                                         kami memberikan pilihan flexible bagi konsumen kami untuk memiliki produk

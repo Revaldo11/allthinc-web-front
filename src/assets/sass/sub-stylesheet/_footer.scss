@@ -2,6 +2,31 @@
     background-color: #F3E9DD;
     color: aqua;
 
+    .center__item{
+        .product__desc{
+            width: 85%;
+        }>p{
+            color: #5B4D43;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22.4px;
+            font-family: $font-family-primary;
+        }
+
+        @media screen and (max-width: 991.98px){
+            .product__desc{
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991.98px){
+        .center__item img{
+            margin: 0 auto;
+        }
+    }
+
     h5{
         color: #37312E !important;
     }
