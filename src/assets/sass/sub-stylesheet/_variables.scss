@@ -20,6 +20,7 @@ $grey-color:#555555;
 $shadow-color: #888888;
 $neutral-100 : #F9F2EA;
 $white:    #fff;
+$neutral-600 : #8B7F76;
 
 // social-media color
 $facebook: #3b5998;
@@ -49,11 +50,13 @@ $vimeo : #3b5998;
 
 //Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // font-family
 $font-b: 'Antic', sans-serif;
 $font-family-primary: 'Antic', sans-serif;
-$font-family-secondary: 'hkgrotesk', sans-serif;
+$font-family-secondary: 'Unna', serif;
 
 // font-size
 $fs-base: 1rem !default;
