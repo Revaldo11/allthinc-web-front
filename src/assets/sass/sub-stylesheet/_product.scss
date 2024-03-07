@@ -70,6 +70,25 @@ h3{
     }
 }
 
+.circle__color{
+    display: flex;
+    width: 100px;
+    position:absolute;
+    flex-wrap: wrap;
+    top: 53%;
+    left: 5%;
+
+}
+
+.circle__color__inner{
+    display: block;
+    width:20px;
+    height: 20px;
+    background: #8AB790;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
 .product__card{
     width: 310px;
     height: 286px;
