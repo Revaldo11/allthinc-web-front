@@ -64,7 +64,7 @@ class Footer extends Component{
         return(
             <footer className="footer position-relative">
               <FooterTop links={this.state.links} socialLinks={socialLinks} />
-                <FooterBottom currentYear={currentYear} />
+              <FooterBottom currentYear={currentYear} />
             </footer>
         );
         }

@@ -13,13 +13,14 @@ ul{
         @media (max-width: 991.98px){
             padding-left: 24px;
             padding-right: 24px;
+            padding-top: 20px;
         }
         .footer__top__content{
             justify-content: space-between;
             align-items: center;
 
             @media (max-width: 991.98px){
-                padding: 50px 20px;
+                padding: 50px 0px;
             }
         }
 

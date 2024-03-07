@@ -1,0 +1,115 @@
+.promo{
+    margin: 121px 0;
+
+    @media (max-width: 992px) {
+        margin: 30px 0;
+    }
+}
+
+.promo__left{
+    width: 100%;
+    margin-right: 30px;
+
+    @media (max-width: 992px) {
+        margin-right: 0;
+        padding: 0 !important;
+    }
+
+    .promo__img{
+        width: 100%;
+        height: 100%;
+
+        @media (max-width: 992px) {
+            height: 136px;
+            object-fit: cover;
+            // object-position: -20px 0px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media (max-width: 992px){
+                height: 100%;
+                object-fit: cover;
+                object-position: -20px 0px;
+            }
+        }
+    }
+}
+
+.promo__right{
+    width: 100%;
+    padding: 10px !important;
+    margin-left: 30px;
+
+    @media (max-width: 992px) {
+        margin-left: 15px;
+        padding: 0px !important;
+    }
+}
+
+
+.promo__title{
+    width: 288px;
+    color: var(--Neutrals-Dark-Brown, #37312E);
+    font-family: $font-family-secondary !important;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    margin-bottom: 16px;
+
+    @media (max-width: 992px) {
+        width: 108px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 19px; /* 19.2px */
+        margin-bottom: 8px;
+    }
+}
+
+.promo__desc{
+    width: 287px;
+    color: var(--Color-Neutral-600, #8B7F76);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    margin-bottom: 40px;
+
+    @media (max-width: 992px) {
+        width: 108px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 16px; /* 16px */
+        margin-bottom: 14px;
+    }
+}
+
+.promo__btn{
+    align-items: center;
+    background: var(--Neutrals-Button-Bg, #C18553) !important;
+    border: none !important;
+    width: 100px;
+    height: 40px;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 140% !important; /* 22.4px */
+    font-family: $font-family-secondary !important;
+    text-align: center;
+    color: var(--Color, #FFF) !important;
+
+    @media (max-width: 992px) {
+        width: 60px;
+        height: 20px;
+        font-size: 8px !important;
+        font-weight: 700 !important;
+        line-height: 11.2px !important; /* 11.2px */
+    }
+}
+
+.promo__btn:hover{
+    background: var(--Neutrals-Button-Bg-Hover, #A16A3A) !important;
+    transition: ease-in 0.3s;
+}

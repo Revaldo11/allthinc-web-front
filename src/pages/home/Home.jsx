@@ -1,12 +1,16 @@
 import Banner from "./Banner"
-// import CreatorPopuler from "./creatorPopuler/CreatorPopuler"
+import PopularCreators from "./creatorPopuler/PopularCreators"
+import Promo from "./Promo/Promo"
 import Footer from "../../layouts/Footer"
+import Product from "./Product/Product"
 
 const Home = () => {
   return (
     <div>
       <Banner />
-      {/* <CreatorPopuler /> */}
+      <PopularCreators />
+      <Promo />
+      <Product />
       <Footer />
     </div>
   )
